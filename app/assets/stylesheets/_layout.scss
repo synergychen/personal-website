@@ -14,13 +14,13 @@ html, body {
 
   .site-title {
     @include span-columns(2);
-    @include shift(1);
+    @include shift(2);
     font-size: 26px;
     font-weight: bold;
   }
 
   .nav-list-wrapper {
-    @include span-columns(4);
+    @include span-columns(3);
     height: 36px;
 
     .nav-list {
@@ -45,7 +45,7 @@ html, body {
 
   .social-links-wrapper {
     @include span-columns(2);
-    @include shift(2);
+    @include shift(1);
     height: 36px;
 
     .image-helper {
@@ -68,10 +68,17 @@ html, body {
 }
 
 .banner-wrapper {
-  background-color: #6396fc;
   @include span-columns(12);
+  background-color: #6396fc;
 
   .banner-title {
+    height: 200px;
+    margin: 0;
+    line-height: 200px;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-weight: 100;
   }
 }
 
