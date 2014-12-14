@@ -45,26 +45,27 @@ html, body {
 
   .social-links-wrapper {
     @include span-columns(2);
-    @include shift(1);
+    @include shift(1.4);
+    width: 156px;
     height: 36px;
-
-    .image-helper {
-      display: inline-block;
-      height: 100%;
-      vertical-align: middle;
-    }
-
-    .social-image {
-      vertical-align: middle;
-      height: 24px;
-      padding: 0 10px;
-      opacity: 0.5;
-    }
-
-    .social-image:hover {
-      opacity: 1;
-    }
   }
+}
+
+.image-helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.social-image {
+  vertical-align: middle;
+  height: 24px;
+  padding: 0 10px;
+  opacity: 0.5;
+}
+
+.social-image:hover {
+  opacity: 1;
 }
 
 .banner-wrapper {
@@ -72,23 +73,33 @@ html, body {
   background-color: #6396fc;
 
   .banner-title {
-    height: 200px;
-    margin: 0;
-    line-height: 200px;
+    margin: 80px;
     text-align: center;
     color: white;
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 100;
   }
 }
 
 .body-wrapper {
-  @include span-columns(12);
+  @include span-columns(8);
+  @include shift(2);
+
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .footer-wrapper {
-  @include span-columns(12);
+  @include span-columns(8);
+  @include shift(2);
 
   .footer-text {
+    text-align: center;
+    opacity: 0.5;
+  }
+
+  .social-links-wrapper {
+    width: 156px;
+    height: 36px;
+    margin: 0 auto;
   }
 }
