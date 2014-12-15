@@ -1,0 +1,50 @@
+.all-projects {
+  padding: 25px 0;
+
+  .project-detail-info {
+    @include span-columns(4);
+    @include omega(3n);
+    background-color: rgba(232, 232, 232, 0.1);
+    margin-bottom: 25px;
+    padding: 20px;
+    height: 288px;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+
+    .project-header {
+      .project-name {
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 100;
+        letter-spacing: 1px;
+        float: left;
+      }
+
+      .project-github {
+        padding: 5px;
+        float: right;
+      }
+
+      .project-website {
+        padding: 5px;
+        float: right;
+      }
+    }
+
+    .project-description {
+      font-weight: 100;
+      letter-spacing: 0.5px;
+      line-height: 170%;
+      clear: both;
+    }
+  }
+
+  .project-detail-info:hover {
+    background-color: rgba(99, 150, 252, 1);
+    box-shadow: 0 0 10px 1.5px rgba(0, 0, 0, 0.3);
+    color: white;
+  }
+}

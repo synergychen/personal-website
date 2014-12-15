@@ -1,0 +1,25 @@
+<div class="project-detail-info">
+  <div class="project-header">
+    <div class="project-name">
+      <%= project.name %>
+    </div>
+
+    <% if project.github_link? %>
+      <div class="project-github">
+        <%= link_to image_tag("github.png", class: "social-image"),
+          project.github_link %>
+      </div>
+    <% end %>
+
+    <% if project.website_link? %>
+      <div class="project-website">
+        <%= link_to image_tag("website-link.png", class: "social-image"),
+          project.website_link %>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="project-description">
+    <%= truncate project.description, length: 250 %>
+  </div>
+</div>
