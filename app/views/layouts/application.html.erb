@@ -13,24 +13,13 @@
     <div class="nav-list-wrapper">
       <ul class="nav-list">
         <li class="nav-list-item">PROJECTS</li>
-        <li class="nav-list-item">BLOG</li>
+        <li class="nav-list-item"><%= link_to "BLOG",
+          "http://www.synergychen.com/" %></li>
         <li class="nav-list-item">RESUME</li>
       </ul>
     </div>
 
-    <div class="social-links-wrapper">
-      <span class="image-helper"></span>
-      <%= image_tag("linkedin.png", class: "social-image") %>
-
-      <span class="image-helper"></span>
-      <%= image_tag("wordpress.png", class: "social-image") %>
-
-      <span class="image-helper"></span>
-      <%= image_tag("github.png", class: "social-image") %>
-
-      <span class="image-helper"></span>
-      <%= image_tag("email.png", class: "social-image") %>
-    </div>
+    <%= render "social_links" %>
   </div>
 
   <div class="banner-wrapper">
@@ -44,19 +33,7 @@
   <div class="footer-wrapper">
     <p class="footer-text">Designed by <strong>Chen Huang</strong></p>
 
-    <div class="social-links-wrapper">
-      <span class="image-helper"></span>
-      <%= image_tag("linkedin.png", class: "social-image") %>
-
-      <span class="image-helper"></span>
-      <%= image_tag("wordpress.png", class: "social-image") %>
-
-      <span class="image-helper"></span>
-      <%= image_tag("github.png", class: "social-image") %>
-
-      <span class="image-helper"></span>
-      <%= image_tag("email.png", class: "social-image") %>
-    </div>
+    <%= render "social_links" %>
   </div>
 </body>
 </html>
