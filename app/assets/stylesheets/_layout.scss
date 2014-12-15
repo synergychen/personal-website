@@ -11,6 +11,10 @@ html, body {
 .nav-bar-wrapper {
   @include span-columns(12);
   padding: 20px 0;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0 0 10px 1.5px rgba(0, 0, 0, 0.1);
 
   .site-title {
     @include span-columns(2);
@@ -90,6 +94,7 @@ html, body {
 .banner-wrapper {
   @include span-columns(12);
   background-color: #6396fc;
+  padding-top: 76px;
 
   .banner-title {
     margin: 80px;
